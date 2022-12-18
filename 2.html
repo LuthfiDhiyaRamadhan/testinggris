@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inggris For Education</title>
+    <!-- bootstrap 5 css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+<!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand d-flex flex-column align-item-start" id="sidebar" style="background-color: fuchsia;">
+        <a href="#" class="navbar-brand text-light mt-2">
+            <div class=" font-weight-bold">English Practice</div>
+        </a>
+        
+        <ul class="navbar-nav d-flex flex-column mt-5 w-100">
+            <li class="nav-item w-100 active">
+                <a href="#" class="nav-link text-light pl-4">Home</a>
+            </li>
+            <li class="nav-item dropdown w-100">
+                <a href="#" class="nav-link dropdown-toggle text-light pl-4" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Service</a>
+                <ul class="dropdown-menu w-100" aria-labelledby="navbarDropdown"style="background-color:gainsboro;">
+                    <li><a href="1.html" class="dropdown-item text-light pl-4 p-2">Describing People</a></li>
+                    <li><a href="2.html" class="dropdown-item text-light pl-4 p-2">Food</a></li>
+                    <li><a href="3.html" class="dropdown-item text-light pl-4 p-2">A Day at School</a></li>
+                </ul>
+            </li>
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light pl-4">About Us</a>
+            </li>
+        </ul>
+    </nav>
+    <section class="p-4 my-container" >
+        <button class="btn my-4" id="menu-btn" style="background-color: fuchsia;">Toggle Sidebar</button>
+            <div class="">
+                <div class="row">
+                    <div class="col" data-aos="fade-right"data-aos-duration="2000">
+                        <div class="text-center">
+                            <img src="food.jpg" class="rounded" >
+                        </div>
+                    </div>
+                    <div class="col"data-aos="fade-left"data-aos-duration="2000">
+                        <h1 class="">Foods</h1>
+                        <h3>We will learn about the foods in the lunch</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint doloribus expedita, ullam mollitia voluptates ipsa modi, eligendi fuga optio ad tempore tempora voluptatem illum necessitatibus.</p>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="2000" class="text-center py-4">
+                <h3 data-aos-duration="2000">Please listen about the food that is available at lunch</h3>
+                <div class="video-container mb-2 pt-4" data-aos="zoom-in" data-aos-duration="2000">                
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/vo8HZ6cMsO4" frameborder="0" allowfullscreen></iframe>
+               </div>
+            </div>
+            <div class="pt-4" style="background-color: fuchsia;">
+                <div class="row">
+                    <div class="col "data-aos="fade-up" data-aos-duration="2000">
+                        <div class="text-center">
+                            <img src="food.jpg" class="rounded" >
+                        </div>
+                    </div>
+                    <div class="col"data-aos="fade-up" data-aos-duration="2000">
+                        <h1>LET'S PLAY GAME</h1>
+                        <p>listen to the song and fill in the blank lyrics don't forget to screen shoot your score</p>
+                        <a class="btn btn-primary pt-2"role="button" href="https://lyricstraining.com/play/the-singing-walrus/fruit-song-for-kids/H0ZDLkEoP0#b7w" style="cursor:pointer;">Play Song</a>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-4">
+                <div class="row">
+                    <div class="col "data-aos="zoom-in-right" data-aos-duration="2000">
+                        <p>Before playing the word choosing game, you should know, "A" and "An" are used for one object. while "some" is for many objects. Have a nice play</p>
+                        <a class="btn btn-primary pt-2"href="https://www.gamestolearnenglish.com/"style="cursor: pointer;">Play Game</a>
+                        <p class="pt-2">After playing, tell me how much food did you get from the song, video and picture above?  Send answers to the home work attachment</p>
+                        <h2 class="pt-4">Thanks You!</h2>
+                    </div>
+                    <div class="col" data-aos="zoom-in-left" data-aos-duration="2000">
+                        <div class="text-center">
+                            <img src="game.jpg" class="rounded" >
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+          </section>
+    
+
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <!-- custom js -->
+    <script>
+        var menu_btn = document.querySelector("#menu-btn")
+        var sidebar = document.querySelector("#sidebar")
+        var container = document.querySelector(".my-container")
+        menu_btn.addEventListener("click", () => {
+            sidebar.classList.toggle("active-nav")
+            container.classList.toggle("active-cont")
+        })
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+
+</html>
